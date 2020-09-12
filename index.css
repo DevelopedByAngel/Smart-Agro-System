@@ -1,0 +1,193 @@
+body
+{
+	background-color: white;
+}
+nav
+{
+	font-size:1.5rem;
+	display:flex;
+	justify-content:flex-end;
+	background-image:linear-gradient(to right,rgba(0,0,0,0.3),black);
+}
+nav a
+{
+	padding:.5rem 1rem;
+	color:white;
+	text-shadow: 0 0 2px #fff, 0 0 3px #3dff71, 0 0 4px #3dff71, 0 0 5px #3dff71, 0 0 6px #3dff71, 0 0 7px #3dff71, 0 0 8px #3dff71;
+}
+nav a:hover
+{
+	color:white;
+	text-decoration:none;
+	font-weight:bolder;
+	text-shadow: 0 0 4px #fff, 0 0 5px #3dff71, 0 0 6px #3dff71, 0 0 7 #3dff71, 0 0 9px #3dff71, 0 0 10px #3dff71, 0 0 11px #3dff71;
+
+}
+.nav-link{
+display:inline-block;
+}
+#scan
+{
+	width:35%;
+	height:3rem;
+	background-image:linear-gradient(to top,#19a5c0,transparent);
+	border-bottom:3px solid #8ec2d8;
+	box-shadow:2px 2px 2px white;
+	border-radius:10px;
+	position:absolute;
+	right:3rem;
+	animation-name:unset;
+	display:block;
+	animation-duration:1s;
+	animation-iteration-count:1
+	animation-fill-mode: forwards;
+}
+@keyframes scan
+{
+	from {transform:translate3d(0,0,0);}
+	to{transform:translate3d(0,420px,0);display:none;}
+}
+.dropdown-menu
+{
+	background-color:unset;
+	left:-1rem;
+}
+.dropdown-item
+{
+	text-align:center;
+	background-image: linear-gradient(to bottom,rgba(0,0,0,0.5),rgba(0,0,0,0.8))
+}
+
+.background
+{
+	width:100%;
+	position:relative;
+	top:-3.5rem;
+	z-index:-1;
+}
+.logo
+{
+	position:absolute;
+	left:3rem;
+	top:3rem;
+	z-index:2;
+	transition: transform 0.5s;
+}
+.logo:hover
+{
+	transform: scale(1.3)
+}
+.logo:active
+{
+	transform: scale(0.8)
+}
+.logo img
+{
+	border:0px solid transparent;
+	border-radius: 50%;
+}
+.card
+{
+	background-color:transparent;
+
+}
+.card-header
+{
+	background-color:transparent;
+	border:unset;
+}
+#embed
+{
+	width:100%;
+	height:fit-content;
+	display:flex;
+	justify-content:center;
+	padding:5%;
+	background-color:#f0f8ff;
+}
+.innerembed
+{
+	width:fit-content;
+	height:fit-content;
+	display:flex;
+	justify-content:center;
+	padding:0.5rem;	
+	background-color:black;
+	box-shadow:0 0rem 3rem rgba(1,126,255,.5)
+}
+.btn
+{
+	font-size:2rem;
+	color:;
+}
+.card-body
+{
+	font-size:1.3rem;
+
+}
+#contact
+{
+	width:100%;
+	background-color:black;
+	border-top:1px solid white;
+}
+.form-control 
+{
+    border-bottom: 3px solid green;
+    animation-name: w;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    box-shadow: 0 0 black;
+}
+@keyframes w {
+	0% {
+    border-bottom: 3px solid purple;
+}
+25% {
+    border-bottom: 3px solid orange;
+}
+50% {
+    border-bottom: 3px solid blue;
+}
+75% {
+    border-bottom: 3px solid green;
+}
+}
+form
+{
+	text-align: center;
+}
+.info
+{
+	display: flex;
+	justify-content: space-around;
+	padding:2rem;
+}
+.angel,.bairavi
+{
+	color:white;
+
+}
+.name
+{
+	margin:0px 0.8em;
+	font-size:1.2rem;
+	font-weight:bold;
+}
+.angel img,.bairavi img
+{
+	margin:1em;
+}
+
+
+/*
+
+Confused in what skill i have
+Phase 1=Career options given
+Phase 2=Creativity check
+Situation Check with lie detector====VR
+DNA test
+Problem:
+EG:math codon(GTCA)
+Find the Probability of math codon in the person.
+*/
