@@ -5,6 +5,7 @@
 	</title>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 	<link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="switch.css">
 </head>
 <body>
 	<nav>
@@ -20,9 +21,10 @@
 	</nav>
 	<div class="logo"><img src="logo.PNG" width='100' height='100'></div>
 <div><img src="background.png" class="background"></div>
-<br><br><br>
+<br><br>
+<div class="mode"><div class="switch" id='light'><div class="round" id="sun"></div><div id="cloud1"></div><div id="cloud2"><div class="inner"></div></div></div></div>
 <div id="ok">
-	  <img src="logo.PNG" style="float:right">
+	  <img src="logo.PNG" id="changingimage" style="float:right">
 
 	<div class="accordion" id="accordionExample">
   <div class="card">
@@ -71,34 +73,29 @@
   </div>
 </div>
 </div>
-
 <div id="embed" class="embed-responsive embed-responsive-16by9">
-  <iframe class="embed-responsive-item" src="final.mp4" allowfullscreen>
+  <div class="video">
+    <video class="embed-responsive-item" src="final.mp4" allowfullscreen controls autoplay>
+  </div>
     
-  </iframe>
+  </video>
 </div>
-
 <div id="contact">
-
-<div class="info">
-<div class="angel">
-  <p class='name'>Angel.F</p>
-  <img src="https://icon-library.com/images/mail-icon-white-png/mail-icon-white-png-16.jpg" width="25"><a class="mail" href="mailto:angelfrancis1111@gmail.com?subject=Smart Agro System">angelfrancis1111@gmail.com</a><br>
-  <img src="https://iconsplace.com/wp-content/uploads/_icons/ffffff/256/png/linkedin-icon-18-256.png" width="25"><a class="linkedin" href="https://www.linkedin.com/in/angel-francis-267906171/">Angel Francis</a>
-</div>
-<div class="bairavi">
-  <p class="name">Bairavi.B</p>
-  <img src="https://icon-library.com/images/mail-icon-white-png/mail-icon-white-png-16.jpg" width="25"><a class="mail" href="mailto:tbalaguru61@gmail.com?subject=Smart Agro System">tbalaguru61@gmail.com</a><br>
-  <img src="https://iconsplace.com/wp-content/uploads/_icons/ffffff/256/png/linkedin-icon-18-256.png" width="25"><a class="linkedin" href="https://www.linkedin.com/in/bairavi-balaguru-52002517b/">Bairavi Balaguru</a>
-</div>
-</div>
- 
-</div>
-
-
-	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <h1 style="color:white;text-align:center;">Contact Us</h1>
+  <form>
+    <label for='name' >Email</label>
+    <input id="name" class="form-control" type="text" placeholder="Enter name">
+    <label for='email' >Email</label>
+    <input type="email" class="form-control" id="email" placeholder="Enter email">
+    <label for='message' >Message</label>
+    <input class="form-control" id="message" type="textarea" placeholder="Message">
+    <div id='submitdiv'><input type="submit" class="btn btn-secondary-outline btn-lg" value="Send"></div>
+  </form>
+ </div>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 <script type="text/javascript" src="index.js"></script>
+<script type="text/javascript" src="switch.js"></script>
 </body>
 </html>

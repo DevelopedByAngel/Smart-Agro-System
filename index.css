@@ -115,10 +115,13 @@ display:inline-block;
 	background-color:black;
 	box-shadow:0 0rem 3rem rgba(1,126,255,.5)
 }
+
 .btn
 {
 	font-size:2rem;
-	color:;
+	color:#0099bb;
+
+	font-weight:bolder;
 }
 .card-body
 {
@@ -130,14 +133,40 @@ display:inline-block;
 	width:100%;
 	background-color:black;
 	border-top:1px solid white;
+	padding:7% 20%;
+
+}
+form
+{
+	display:flex;
+	justify-content:space-between;
+	flex-wrap:wrap;
+}
+label
+{
+	color:white;
+}
+#submitdiv
+{
+	width:100%;
+	text-align:center;
 }
 .form-control 
 {
     border-bottom: 3px solid green;
     animation-name: w;
-    animation-duration: 6s;
+    animation-duration: 4s;
     animation-iteration-count: infinite;
     box-shadow: 0 0 black;
+
+}
+#email
+{
+	animation-delay:0.8s;
+}
+#name
+{
+	animation-delay:0.48s;
 }
 @keyframes w {
 	0% {
