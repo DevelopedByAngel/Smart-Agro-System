@@ -131,9 +131,13 @@ display:inline-block;
 #contact
 {
 	width:100%;
-	background-color:black;
+	background-color:#ddfbf4;
 	border-top:1px solid white;
 	padding:7% 20%;
+	color:#1c8064;
+	font-family: 'Josefin Sans', sans-serif;
+	transition:all 0.2s linear;
+
 
 }
 form
@@ -141,10 +145,6 @@ form
 	display:flex;
 	justify-content:space-between;
 	flex-wrap:wrap;
-}
-label
-{
-	color:white;
 }
 #submitdiv
 {
@@ -186,37 +186,63 @@ form
 {
 	text-align: center;
 }
-.info
-{
-	display: flex;
-	justify-content: space-around;
-	padding:2rem;
-}
-.angel,.bairavi
-{
-	color:white;
-
-}
-.name
-{
-	margin:0px 0.8em;
-	font-size:1.2rem;
-	font-weight:bold;
-}
-.angel img,.bairavi img
-{
-	margin:1em;
-}
 
 
-/*
 
-Confused in what skill i have
-Phase 1=Career options given
-Phase 2=Creativity check
-Situation Check with lie detector====VR
-DNA test
-Problem:
-EG:math codon(GTCA)
-Find the Probability of math codon in the person.
-*/
+input,textarea
+{
+	    margin-bottom: 10px;
+}
+.btn-secondary-outline
+{
+	color:#0099bb;
+	outline:none;
+	border:none;
+	transition:transform 0.25s ease-out;
+	padding:1% 5%;
+}
+.btn-secondary-outline:hover
+{
+	color:#0099bb;
+	outline:none;
+	border:none;
+	transform: scale(1.2);
+}
+.btn-secondary-outline:active
+{
+	color:#0099bb;
+	transform: scale(0.9);
+}
+.alert
+{
+	position: fixed;
+	bottom: 0;
+	right:0;
+	padding:10px;
+	font-size:1.5rem;
+	background-color:#645CFF;
+	border:5px solid transparent;
+	border-radius:10px;
+	margin:30px;
+	width:30%;
+	height:content;
+	display:none;
+	font-family: 'Josefin Sans', sans-serif;
+}
+.alert div
+{
+	height:9px;
+	position:relative;
+	bottom:0;
+	right:0;
+	/*animation-name:time;*/
+	animation-duration:2s;
+	animation-timing-function:linear;
+	animation-iteration-count:1;
+	background-color:black;
+}
+@keyframes time 
+{
+	from{width:100%;}
+	to{width:0%}
+}

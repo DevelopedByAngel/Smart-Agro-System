@@ -1,7 +1,8 @@
 const height=$('.round').css('height');
 $('.round').css('width',height);
 const width=$('.round').width();
-
+const sender="remainderevent@gmail.com";
+const senderp="remainder111";
 $('.switch').on('click',()=>
 {
 	if($('.switch').attr('id')=='dark')
@@ -15,6 +16,8 @@ $('.switch').on('click',()=>
 			$('#changingimage').attr('src','logo.png');
 			$('body').css('color','black');
 			$('.btn').css('color','#0099bb');
+			$('#contact').css({'background':'#ddfbf4','color':'#1c8064'})
+			$('.card').css('border','1px solid rgb(0 0 0 / 13%)');
 		}
 	else
 	{
@@ -26,7 +29,9 @@ $('.switch').on('click',()=>
 		$('body').css('background-color','black');
 		$('body').css('color','white');	
 		$('#changingimage').attr('src','blacklogo.png');
-		$('.btn').css('color','#00ffad')
+		$('.btn').css('color','#00ffad');
+		$('#contact').css({'background':'black','color':'white'})
+		$('.card').css('border','1px solid rgb(255 255 255 / 43%)');
 
 	}
 
