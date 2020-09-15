@@ -42,56 +42,43 @@ if($(window).width()<1000)
 }
 $('form').on('submit', (event)=>
 {
+	console.log($('#name').val())
 	event.preventDefault();
-	fetch('https://angelfrancis.pythonanywhere.com/angelmail',
+	fetch('https://angelmail.herokuapp.com/',
 	{
 		method:'POST',
-		headers:{'Content-Type': 'Authorization'},
+		headers:{'Content-Type': 'application/json'},
 		body: JSON.stringify({
 			name:$('#name').val(),
 			email:$('#email').val(),
 			msg:$('#message').val()
 		})
 	})
-	.then(u=>console.log(u))
-	// .then(user=>user.json())
-	// .then(user=>
-	// {
-	// 	if(user.msg=='mail sent')
-	// 	{
-	// 		$('.alert p').text('Confirmation mail sent');
-	// 		$('.alert').css('display','block');
-	// 		$('.alertdiv').css('animation-name','time');
-	// 		setTimeout(function()
-	// 		{
-	// 			$('.alert').css('display','none');
-	// 			$('.alertdiv').css('animation-name','');
-	// 		},2000)
-	// 	}
-	// 	else
-	// 	{
-	// 		$('.alert p').text('Error occured!! Please resend message');
-	// 		$('.alert').css('display','block');
-	// 		$('.alertdiv').css('animation-name','time');
-	// 		setTimeout(function()
-	// 		{
-	// 			$('.alert').css('display','none');
-	// 			$('.alertdiv').css('animation-name','');
-	// 		},2000)
-	// 	}
-	// })
+	.then(user=>user.json())
+	.then(user=>
+	{
+		console.log(user)
+		if(user.msg=='mail sent')
+		{
+			$('.alert p').text('Confirmation mail sent');
+			$('.alert').css('display','block');
+			$('.alertdiv').css('animation-name','time');
+			setTimeout(function()
+			{
+				$('.alert').css('display','none');
+				$('.alertdiv').css('animation-name','');
+			},2000)
+		}
+		else
+		{
+			$('.alert p').text('Error occured!! Please resend message');
+			$('.alert').css('display','block');
+			$('.alertdiv').css('animation-name','time');
+			setTimeout(function()
+			{
+				$('.alert').css('display','none');
+				$('.alertdiv').css('animation-name','');
+			},2000)
+		}
+	})
 })
-// function sendEmail() { 
-//       Email.send({ 
-//         Host: "smtp.gmail.com", 
-//         Username: "sender@email_address.com", 
-//         Password: "Enter your password", 
-//         To: 'receiver@email_address.com', 
-//         From: "sender@email_address.com", 
-//         Subject: "Sending Email using javascript", 
-//         Body: "Well that was easy!!", 
-//       }) 
-//         .then(function (message) { 
-//           alert("mail sent successfully") 
-//         }); 
-//     } 
