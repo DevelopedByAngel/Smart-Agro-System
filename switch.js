@@ -13,7 +13,7 @@ $('.switch').on('click',()=>
 			$('#star1').attr('id','cloud1');
 			$('#star2').attr('id','cloud2');
 			$('body').css('background-color','white');
-			$('#changingimage').attr('src','logo.png');
+			$('#changingimage').attr('src','logo.PNG');
 			$('body').css('color','black');
 			$('.btn').css('color','#0099bb');
 			$('#contact').css({'background':'#ddfbf4','color':'#1c8064'})
