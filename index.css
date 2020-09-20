@@ -9,13 +9,13 @@ nav
 	justify-content:flex-end;
 	background-image:linear-gradient(to right,rgba(0,0,0,0.3),black);
 }
-nav a
+nav a,nav p
 {
 	padding:.5rem 1rem;
 	color:white;
 	text-shadow: 0 0 2px #fff, 0 0 3px #3dff71, 0 0 4px #3dff71, 0 0 5px #3dff71, 0 0 6px #3dff71, 0 0 7px #3dff71, 0 0 8px #3dff71;
 }
-nav a:hover
+nav a:hover,nav p:hover
 {
 	color:white;
 	text-decoration:none;
@@ -140,7 +140,7 @@ display:inline-block;
 
 
 }
-form
+#contact form
 {
 	display:flex;
 	justify-content:space-between;
@@ -220,7 +220,7 @@ input,textarea
 	right:0;
 	padding:10px;
 	font-size:1.5rem;
-	background-color:#645CFF;
+	background-color:#4caf50;
 	border:5px solid transparent;
 	border-radius:10px;
 	margin:30px;

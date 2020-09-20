@@ -51,7 +51,7 @@ $('form').on('submit', (event)=>
 		body: JSON.stringify({
 			name:$('#name').val(),
 			email:$('#email').val(),
-			msg:$('#message').val()
+			message:$('#message').value
 		})
 	})
 	.then(user=>user.json())
@@ -82,3 +82,10 @@ $('form').on('submit', (event)=>
 		}
 	})
 })
+const login=()=>
+{
+	if($(window).width()<1000)
+	window.location='file:///D:/ANGEL/git/Smart-Agro-System/home1.html?auth='+$('#auth').val();
+	else
+	window.location='file:///D:/ANGEL/git/Smart-Agro-System/home.html?auth='+$('#auth').val();
+}
