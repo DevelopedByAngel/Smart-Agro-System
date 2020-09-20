@@ -2,8 +2,8 @@ var auth=(window.location.href).split("=")[1];
 console.log(auth)
 if (auth==="demo")
 auth="aaqCQAawYvMh9xT1jZN56Wmg5TdA9ek-"
-setInterval(function(){
-	fetch('http://blynk-cloud.com/'+auth+'/get/V0')
+// setInterval(function(){
+	fetch('https://blynk-cloud.com/'+auth+'/get/V0')
 .then(data => data.json())
 .then(data => 
 	{
@@ -18,7 +18,10 @@ fetch('http://blynk-cloud.com/'+auth+'/get/V1')
 		const temp=Math.round(data[0])
 		$('.tempp').text(temp+'\xB0c')
 	})
-},1000)
+// },1000)
+		$('.watercontainer img').css('height',41.23+'%');
+		$('.waterp').text(Math.round(41.23)+"%")
+		$('.tempp').text(32+'\xB0c')
 $('.drop').on('click',function()
 {
 	if($('#switchtext').text()=='OFF')
