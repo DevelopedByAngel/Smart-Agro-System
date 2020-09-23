@@ -51,7 +51,7 @@ $('form').on('submit', (event)=>
 		body: JSON.stringify({
 			name:$('#name').val(),
 			email:$('#email').val(),
-			message:$('#message').value
+			message:document.querySelector('#message').value
 		})
 	})
 	.then(user=>user.json())
