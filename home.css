@@ -35,7 +35,7 @@
 	z-index:-1;
 	width:100%;
 	height:100%;
-	background-image:url('https://wallpapercave.com/wp/wp1886331.jpg');
+	background-image:url('back.jpg');
 	background-size:100%;
 	filter:brightness(0.4);
 }
@@ -80,7 +80,7 @@
 .tempoverlay
 {
 	position:absolute;
-	background-image:url(https://i.pinimg.com/736x/4d/6a/08/4d6a08d0f3ee3c384725ee33bc95cba2.jpg);
+	background-image:url(temp.jpg);
 	background-size:100%;
 	background-position:center;
 	/*filter:grayscale(0.9);*/
